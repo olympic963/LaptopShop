@@ -1,0 +1,32 @@
+# Bỏ qua toàn bộ thư mục .idea ở thư mục gốc
+.idea/
+
+# Bỏ qua node_modules trong thư mục fe/
+fe_react/node_modules/
+
+# Bỏ qua __pycache__ trong be_python/
+be_python/__pycache__/
+be_python/**/__pycache__/
+
+# Bỏ qua thư mục .idea bên trong be_python/
+be_python/.idea/
+
+# Bỏ qua file log trong be_python/
+be_python/*.log
+
+# Bỏ qua tất cả file .log bên trong thư mục con (ví dụ: scripts/index_new_data.log)
+be_python/**/*.log
+
+# Bỏ qua thư mục data trong be_python
+be_python/data/
+
+
+
+
+
+
+
+
+
+
+

@@ -34,6 +34,7 @@ public class AppConfig {
 					cfg.setAllowedOrigins(Arrays.asList(
 							"http://localhost:3000",
 							"http://localhost:4200",
+							"http://localhost:5173",
 							"http://14.225.29.152:3000",
 							"http://14.225.29.152"
 					));

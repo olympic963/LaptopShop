@@ -15,7 +15,7 @@ const HomeCarousel = () => {
     useEffect(() => {
         const fetchCarouselImages = async () => {
             try {
-                const response = await axios.get(`${API_BASE_URL}/home/slideimage`);//Request không chứa header Authorization
+                const response = await axios.get(`${API_BASE_URL}/home/slideimage`);
                 const imagePaths = response.data.map((url) => ({
                     image: `${API_BASE_URL}${url}`,
                     path: "/*",
@@ -42,14 +42,16 @@ const HomeCarousel = () => {
     ));
 
     return (
-        <AliceCarousel
-            mouseTracking
-            items={items}
-            autoPlay
-            infinite
-            autoPlayInterval={2000}
-            disableButtonsControls
-        />
+        <div className="w-4/5 mx-auto">
+            <AliceCarousel
+                mouseTracking
+                items={items}
+                autoPlay
+                infinite
+                autoPlayInterval={2000}
+                disableButtonsControls
+            />
+        </div>
     );
 };
 
